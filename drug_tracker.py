@@ -55,7 +55,7 @@ csv_name=datetime.today().strftime('%Y-%m-%d')
 db1.to_csv(drug+csv_name)
 file_name=drug+csv_name 
 
-#import the csv file from a local folder 
+#import the txt file from a local folder
 d1= pd.read_csv(file_name, sep=",", header=None) 
 d1.columns = ["col1", "price", "tab_cnt", "price_tab"]
 headers = d1.iloc[0]
